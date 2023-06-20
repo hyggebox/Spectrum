@@ -23,6 +23,8 @@
     width: 4.5rem;
     margin-top: 4rem;
 
+    cursor: pointer;
+
     &::before,
     &::after {
         display: block;

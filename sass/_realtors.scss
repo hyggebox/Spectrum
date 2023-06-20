@@ -9,6 +9,9 @@
     justify-content: center;
     gap: 5vh;
 
+    @media only screen and (max-width: $breakpoint-md) {
+        grid-column: 1 / -1;
+    }
 
     &__list {
         display: grid;
@@ -16,6 +19,14 @@
         column-gap: 2rem;
         row-gap: 5vh;
         align-items: center;
+
+        @media only screen and (max-width: $breakpoint-md) {
+            grid-template-columns: repeat(3, min-content max-content);
+        }
+
+        @media only screen and (max-width: $breakpoint-sm) {
+            grid-template-columns: min-content max-content;
+        }
     }
 
     &__img {

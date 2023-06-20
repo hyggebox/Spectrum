@@ -17,7 +17,9 @@ $font-display: 'Josefin Sans', sans-serif;
 // MEDIA QUERIES BREAKPOINTS
 $breakpoint-xlg: 75em;    // 1200px
 $breakpoint-lg:  56.25em; // 900px
-
+$breakpoint-md:  50em;    // 800px
+$breakpoint-sm:  37.5em;  // 600px
+$breakpoint-xsm:  25em;   // 400px
 
 
 
@@ -34,6 +36,10 @@ html {
     font-size: 62.5%; // 10px
 
     @media only screen and (max-width: $breakpoint-xlg) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $breakpoint-xsm) {
         font-size: 50%;
     }
 }
@@ -59,5 +65,17 @@ body {
                         minmax(6rem, 1fr) [center-start] 
                         repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 
                         minmax(6rem, 1fr) [full-end];
+    }
+
+    @media only screen and (max-width: $breakpoint-md) {
+        grid-template-rows: 6rem calc(100vh - 6rem);
+    }
+
+    @media only screen and (max-width: $breakpoint-xsm) {
+        grid-template-rows: 5rem calc(100vh - 5rem);
+        grid-template-columns: [full-start] 
+                        minmax(3rem, 1fr) [center-start] 
+                        repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 
+                        minmax(3rem, 1fr) [full-end];
     }
 }
