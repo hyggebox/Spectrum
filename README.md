@@ -6,6 +6,7 @@
 
 Главная страница сайта агентства по продаже элитной недвижимости. Сраница сделана на HTML + CSS с использованием препроцессора SASS.
 
+Посмотреть страницу > [hyggebox.github.io/Spectrum/](https://hyggebox.github.io/Spectrum/)
 
 
 ![spectrum-2](https://github.com/hyggebox/Spectrum/assets/80201470/fcb31746-dd73-4473-ad17-a6ca76e60944)
